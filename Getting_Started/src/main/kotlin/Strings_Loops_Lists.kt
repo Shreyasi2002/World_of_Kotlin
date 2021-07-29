@@ -129,6 +129,40 @@ fun main()
         if (count == 2)
             println("$n is a prime number...")
     }
+
+    /*
+    Lists
+    - Immutable Lists
+    - Mutable Lists
+    - Array Lists
+     */
+    // Immutable Lists
+    val age = listOf(56, 43, 56, 33, 60, 13, 18)
+    println("The elements of the immutable list are: $age")
+    println("The element at the 4th index is : ${age[4]}")
+
+    // Mutable Lists
+    val variable = mutableListOf("Shreyasi", 200956, "IIT Kanpur", 'F', 18)
+    println("The elements of the mutable list are : $variable")
+
+    // Adding new elements
+    variable.add(2, "Sophomore")
+    println("Now the mutable list is : $variable")
+
+    // Removing elements
+    variable.removeAt(5)
+    println("Now the mutable list is : $variable")
+
+    // Now, let's add the elements of an array
+    variable.addAll(names)
+    println("Now the mutable list is : $variable")
+
+    // ArrayList
+    val different = arrayListOf("Shreyasi", 200956, "IIT Kanpur", 'F', 18)
+    println("The elements of the array list are : $different")
+
+    println("The size of the array is ${different.size}")
+
 }
 
 // Defining new function
