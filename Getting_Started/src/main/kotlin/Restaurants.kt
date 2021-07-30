@@ -1,8 +1,8 @@
 // Primary Constructors, Secondary Constructors and Data Classes
 
-class Resturants (var name: String, var rating: Double, var cost: Double) // Primary Constructor
+data class Restaurants (var name: String = "Bread Zeppelin", var rating: Double = 4.4, var cost: Double = 550.00) // Primary Constructor
 {
-    var noOfDishes: Int = 0
+    private var noOfDishes: Int = 0
 
     // Secondary Constructor
     constructor(name: String, rating: Double, cost: Double, noOfDishes: Int): this(name, rating, cost)
