@@ -9,4 +9,8 @@ open class Animals(var legs: Int, var color: String)
     {
         println("I am sleeping now ;)")
     }
+    open fun sound()
+    {
+        println("I make this sound :)")
+    }
 }

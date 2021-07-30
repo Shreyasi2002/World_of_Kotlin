@@ -1,6 +1,7 @@
 class Cats (legs: Int, color: String): Animals(legs, color)
 {
-    fun meow()
+    // Overriding Methods
+    override fun sound()
     {
         println("I purrr ...... Meow Meow")
     }
